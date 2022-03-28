@@ -1,0 +1,18 @@
+@import '../_variables';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 80px);
+  grid-gap: 1rem;
+  width: 100%;
+  padding: 30px;
+  background: $secondary-color;
+  border-radius: $round-md;
+
+  &_game-over {
+    filter: blur(4px);
+    content: 'Game Over';
+    position: relative;
+  }
+}

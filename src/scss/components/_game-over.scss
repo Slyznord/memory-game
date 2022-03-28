@@ -1,0 +1,39 @@
+@import '../_variables';
+
+.game-over,
+.start-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $secondary-color;
+  border-radius: $round-md;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .95;
+
+  &__h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: $text-primary;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+  }
+}
